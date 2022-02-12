@@ -16,4 +16,16 @@
   <bean id="camera" class="com.xworkz.bean.spring.Camera">
 </bean> 
 
-   </beans>
+<bean id="person" class="com.xworkz.bean.Person">
+<property name="name" value="ali"></property>
+ <property name="bookNames">
+            <list>
+                <value>wings of fire</value>
+                <value>Fear Not: be strong</value>
+                <value>The happiest man on earth</value>
+                <value>The Harry Potter Series: J.K.Rowling</value>
+            </list>
+      </property>
+</bean>
+        
+</beans>

@@ -17,7 +17,9 @@ public class SpringDirector {
 		Camera camera= spring.getBean(Camera.class);
 		
 		
-	
 		
+		Person person= spring.getBean(Person.class);
+		person.getBookNames();
+		person.getName();
 	}
 }
