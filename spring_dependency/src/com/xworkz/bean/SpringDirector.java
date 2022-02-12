@@ -18,8 +18,11 @@ public class SpringDirector {
 		
 		
 		
-		Person person= spring.getBean(Person.class);
+		Person person= spring.getBean("person",Person.class);
 		person.getBookNames();
 		person.getName();
+		
+	//	Person person1= spring.getBean("person1",Person.class);
+	
 	}
 }

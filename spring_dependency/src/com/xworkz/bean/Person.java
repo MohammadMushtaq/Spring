@@ -6,7 +6,16 @@ import java.util.List;
 public class Person {
 
 	private String name;
-	private List<String> bookNames = new ArrayList<String>();
+	private List<String> bookNames;
+	private List<Integer> prices;
+	
+
+	public Person(List<Integer> prices) {
+		super();
+		this.prices = prices;
+		System.out.println("invoked prices"+this.prices);
+	}
+	
 
 	@Override
 	public String toString() {
@@ -28,7 +37,6 @@ public class Person {
 	}
 
 	public String getName() {
-		
 		return name;
 	}
 
