@@ -1,0 +1,5 @@
+package com.xworkz.gold.dao;
+
+public class GoldDAOImpl {
+
+}

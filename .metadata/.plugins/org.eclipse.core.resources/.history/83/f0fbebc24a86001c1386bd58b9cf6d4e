@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Strin {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num= sc.nextInt();
+	
+		
+		int temp=0;
+		for (int i = 0; i < num.length; i++) {
+			for (int j = i+1; j < num.length; j++) {
+				if(num[i]>num[j]) {
+					temp=num[i];
+					num[i]=num[j];
+					num[j]=temp;
+				}
+			}
+		}for (int i : num) {
+			System.out.print(i+" ");
+		}
+		}	
+	}	
+

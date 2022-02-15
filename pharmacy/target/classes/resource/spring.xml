@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<bean id="laptop" class="pharmacy.bean.Laptop"></bean>
+<bean id="doctor" class="pharmacy.bean.Doctor"></bean>
+<bean id="corona" class="pharmacy.bean.Corona"></bean>
+<bean id="minister" class="pharmacy.bean.Minister"></bean>
+<bean id="string" class="java.lang.String"></bean>
+<bean id="tablet" class="pharmacy.bean.Tablet"></bean>
+<bean id="tablet1" class="pharmacy.bean.Tablet"></bean>
+<bean id="purifier" class="pharmacy.bean.Purifier"></bean>
+<bean id="purifier1" class="pharmacy.bean.Purifier"></bean>
+<bean id="steamer" class="pharmacy.bean.Steamer"></bean>
+<bean id="steamer1" class="pharmacy.bean.Steamer"></bean>
+<bean id="tissue" class="pharmacy.bean.Tissue"></bean>
+<bean id="tissue1" class="pharmacy.bean.Tissue"></bean>
+<bean id="oximeter" class="pharmacy.bean.Oximeter"></bean>
+<bean id="oximeter1" class="pharmacy.bean.Oximeter"></bean>
+<bean id="paint" class="pharmacy.bean.Paint"></bean>
+<bean id="paint1" class="pharmacy.bean.Paint"></bean>
+<bean id="sanitizer" class="pharmacy.bean.Sanitizer"></bean>
+<bean id="sanitizer1" class="pharmacy.bean.Sanitizer"></bean>
+<bean id="mask" class="pharmacy.bean.Mask"></bean>
+<bean id="mask1" class="pharmacy.bean.Mask"></bean>
+<bean id="juice" class="pharmacy.bean.Juice"></bean>
+<bean id="juice1" class="pharmacy.bean.Juice"></bean>
+</beans>
+
+
+

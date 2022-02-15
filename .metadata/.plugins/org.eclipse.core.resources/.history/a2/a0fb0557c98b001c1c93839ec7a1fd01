@@ -1,0 +1,29 @@
+package com.xworkz.travel.travels;
+
+public class TravelsImpl implements Travels{
+
+	private Travels travels;
+	private String name;
+	
+	
+	public void setTravels(Travels travels) {
+		this.travels = travels;
+		System.out.println("travels method "+travels);
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+		System.out.println("invoked travels name "+name);
+
+	}
+
+
+	@Override
+	public void booking() {
+		System.out.println("invoked booking");
+		
+	}
+	
+
+}

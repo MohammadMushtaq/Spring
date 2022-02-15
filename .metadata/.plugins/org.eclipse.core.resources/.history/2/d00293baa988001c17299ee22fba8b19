@@ -1,0 +1,5 @@
+package pharmacy.bean.spring;
+
+public class Ups {
+
+}

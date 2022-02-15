@@ -1,0 +1,18 @@
+
+
+public class Strin {
+
+	public static void main(String[] args) {
+	
+		int num=456;
+		int temp= num;
+		int t1=0,len=0;
+		while(temp!=0) {
+			t1=temp%10;
+			len=len+1;
+		}
+		System.out.println(t1);
+			
+		
+	}	
+}

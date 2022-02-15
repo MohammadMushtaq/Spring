@@ -1,0 +1,26 @@
+public class Strin {
+
+	public static void main(String[] args) {
+	
+		
+		int num=153;
+		int temp= num;
+		int len=0;
+		while(temp!=0) {
+			temp=temp/10;
+			len=len+1;
+			}
+		int t2=num;int rem;int mul=1; int arm=0;
+		while(t2!=0) {
+			rem=t2%10;
+			for (int i = 1; i <=len; i++) {
+				mul=mul*rem;
+			}
+			arm=arm+mul;
+			t2=t2/10;
+			System.out.println(arm);
+		}
+		
+		}	
+	}	
+

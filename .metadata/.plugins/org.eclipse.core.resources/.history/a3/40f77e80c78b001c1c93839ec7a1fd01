@@ -1,0 +1,38 @@
+package com.xworkz.travel.traveller;
+
+import com.xworkz.travel.travels.Travels;
+
+public class TravellerImpl implements Traveller{
+	
+	private Travels travels;
+	private String name;
+	private int age;
+	private double contactNo;
+	private boolean interesed;
+	
+	
+
+	public TravellerImpl(Travels travels, String name, int age) {
+		super();
+		this.travels = travels;
+		this.name = name;
+		this.age = age;
+	}
+
+	@Override
+	public void explore() {
+		System.out.println("invoked explore");
+		
+	}
+
+	public double getContactNo() {
+		return contactNo;
+	}
+
+
+	public boolean isInteresed() {
+		return interesed;
+	}
+
+
+}

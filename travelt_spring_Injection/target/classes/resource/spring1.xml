@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<!-- <bean id="traveller" class="com.xworkz.travel.traveller.Traveller"></bean> -->
+
+<bean id="travellerImpl" class="com.xworkz.travel.traveller.TravellerImpl">
+<constructor-arg ref="TravelsImpl"></constructor-arg>
+<constructor-arg value="john"></constructor-arg>
+<constructor-arg value="28"></constructor-arg>
+<property name="contactNo" value="9480676789.0"></property>
+<property name="interesed" value="true"></property>
+</bean>
+
+<!-- <bean id="transport" class="com.xworkz.travel.transport.Transport"></bean> -->
+
+<bean id="TransportImpl" class="com.xworkz.travel.transport.TransportImpl">
+<property name="transport" ref="TransportImpl"></property>
+<property name="type" value="bus"></property>
+</bean>
+
+<!-- <bean id="travels" class="com.xworkz.travel.travels.Travels"></bean> -->
+
+<bean id="TravelsImpl" class="com.xworkz.travel.travels.TravelsImpl">
+<property name="travels" ref="TravelsImpl"></property>
+
+<property name="name" value="kusma"></property>
+</bean>
+
+
+</beans>

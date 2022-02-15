@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Strin {
+
+	public static void main(String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the num to rev");
+		int i= sc.nextInt();
+		
+		int rev=0,rem;
+		while(i!=0) {
+			rem=i%10;
+			rev= rev+rem*10;
+			i=i/10;
+			
+		}
+		System.out.println(i);
+		
+	}	
+}

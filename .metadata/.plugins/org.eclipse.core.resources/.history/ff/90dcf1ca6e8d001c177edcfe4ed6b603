@@ -1,0 +1,8 @@
+package com.xworkz.passport.entity;
+
+public class PassportEntity {
+
+	private int id;
+	private String issueBy;
+	private String 
+}

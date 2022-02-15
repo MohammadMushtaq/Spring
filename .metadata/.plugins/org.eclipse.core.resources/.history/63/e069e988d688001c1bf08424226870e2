@@ -1,0 +1,15 @@
+package com.xworkz.vendor.service;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		 String name="mushtaqahamad";
+		 
+		   String[] nae=name.split("", 7);
+		   
+		   for (String string : nae) {
+			System.out.println(nae);
+		}
+		}
+}

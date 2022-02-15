@@ -1,0 +1,20 @@
+
+public class Execption {
+	
+	public static void myThread(int age)
+	{
+		if(age==12) {
+			throw new Exception("adding the exeption");
+			
+		}
+	}
+		public static void main(String[] args) {
+			int i=500/2;
+			try {
+				Exception.
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
+	
+}

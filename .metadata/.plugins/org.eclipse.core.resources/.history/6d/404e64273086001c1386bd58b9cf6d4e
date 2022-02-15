@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Strin {
+
+	public static void main(String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		int i= sc.nextInt();
+		
+		int rev=0,rem;
+		while(i!=0) {
+			rem=i%10;
+			rev= rem*10+rev;
+			i=i/10;
+			
+		}
+		System.out.println(i);
+		
+	}	
+}

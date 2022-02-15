@@ -1,0 +1,14 @@
+package com.xworkz.bean.spring;
+
+public class Camera {
+	
+//
+//	public Camera(Laptop laptop) {
+//		System.out.println("invoke in camera");
+//	}
+	public void setCaptureImage() {
+		System.out.println("invoked captureimgae");
+	
+	}
+
+}

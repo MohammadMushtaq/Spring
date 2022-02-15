@@ -1,0 +1,13 @@
+package com.xworkz.gold.dao;
+
+import com.xworkz.gold.util.Gold;
+
+public class GoldDAOImpl implements GoldDAO{
+
+	@Override
+	public void save(Gold gold) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

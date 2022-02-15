@@ -1,0 +1,5 @@
+package com.xworkz.travel.transport;
+
+public class TransportImpl {
+
+}

@@ -1,0 +1,5 @@
+package com.xworkz.passport.entity;
+
+public class PassportEntity {
+
+}

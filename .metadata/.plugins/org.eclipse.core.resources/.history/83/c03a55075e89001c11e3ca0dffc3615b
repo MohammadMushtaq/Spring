@@ -1,0 +1,17 @@
+package com.xworkz.gold;
+
+import com.xworkz.gold.dao.GoldDAO;
+import com.xworkz.gold.dao.GoldDAOImpl;
+import com.xworkz.gold.util.Gold;
+
+public class GoldScanner {
+	
+	Gold gold1 = new Gold(1,24d,"5%",95,true,50000d);
+	Gold gold2 = new Gold(2,12d,"10%",75,false,40000d);
+	Gold gold3 = new Gold(3,18d,"7%",80,true,48000d);
+	Gold gold4 = new Gold(4,20d,"6%",85,true,49000d);
+	
+	
+	GoldDAOImpl gol = new GoldDAOImpl();
+	
+}

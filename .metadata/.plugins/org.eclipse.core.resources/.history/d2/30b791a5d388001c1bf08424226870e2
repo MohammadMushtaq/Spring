@@ -1,0 +1,17 @@
+package com.xworkz.vendor.service;
+
+public class Test {
+	
+	public static void main() {
+		Test t= new Test();
+		t.main(null);
+		t.main();
+	}
+
+	public static void main(String[] args) {
+		
+		
+			System.out.println("mushtaq");
+		}
+
+}

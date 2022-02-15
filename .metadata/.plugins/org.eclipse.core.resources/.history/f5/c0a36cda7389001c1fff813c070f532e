@@ -1,0 +1,27 @@
+package com.xworkz.gold.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceException;
+
+import com.xworkz.gold.util.GoldEntity;
+import com.xworkz.util.SingletonEMFUtil;
+
+public class GoldDAOImpl implements GoldDAO{
+
+	@Override
+	public void save(GoldEntity gold) {
+		EntityManager entityManager = SingletonEMFUtil.getEntityManagerFactory().createEntityManager();
+		try {
+			entityManager.getTransaction().begin();
+			entityManager.persist(gold);
+			entityManager.getTransaction().commit();
+		} catch (PersistenceException e) {
+			e.printStackTrace();
+			entityManager.getTransaction().rollback();
+		} finally {
+			entityManager.close();
+		}
+		
+	}
+
+}

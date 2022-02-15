@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Strin {
+
+	public static void main(String[] args) {
+		int num;int temp=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the array");
+		num= sc.nextInt();
+		
+		int n2[]= new int[num];
+		
+		for (int i = 0; i < num; i++) {
+			n2[i]=sc.nextInt();
+		} 
+		for (int i = 0; i < num; i++) {
+			for (int j = i+1; j < num; j++) {
+				
+				if(num[i]>num[j]) {
+					temp=num[i];
+					num[i]=num[j];
+					num[j]=temp;
+				}
+			}
+		}for (int i : num) {
+			System.out.print(i+" ");
+		}
+		}	
+	}	
+

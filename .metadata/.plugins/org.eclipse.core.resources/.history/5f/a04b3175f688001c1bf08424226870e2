@@ -1,0 +1,82 @@
+package com.xworkz.vendor.service;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args) {
+		Scanner s= new Scanner(System.in);
+		System.out.println("enter the arr");
+		int ar=s.nextInt();
+		
+		
+		int[] arr= new int[ar];
+		System.out.println("add the num");
+		for (int i = 0; i < arr.length; i++) {
+			arr[i]=s.nextInt();
+		}
+		System.out.println("added the array");
+		
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		Calculator.num(arr);
+		
+	}
+	
+ 
+	static void num(int arr[]) {
+		int temp=0;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				if(arr[i]<arr[j]) {
+					temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		}
+		System.out.println("sorted array");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]);
+		}
+	}
+}
+
+
+//	public static void main(String[] args) {
+//		Scanner reader = new Scanner(System.in);
+//		System.out.print("Enter two numbers: ");
+//		// nextDouble() reads the next double from the keyboard
+//		double first = reader.nextDouble();
+//		double second = reader.nextDouble();
+//		System.out.print("Enter an operator (+, -, *, /): ");
+//		char operator = reader.next().charAt(0);
+//		double result;
+//		//switch case for each of the operations
+//		switch(operator)
+//		{
+//		case '+':
+//		result = first + second;
+//		break;
+//		case '-':
+//		result = first - second;
+//		break;
+//		case '*':
+//		result = first * second;
+//		break;
+//		case '/':
+//		result = first / second;
+//		break;
+//		// operator doesn't match any case constant (+, -, *, /)
+//		 
+//		 
+//		default:
+//		System.out.printf("Error! operator is not correct");
+//		return;
+//		}
+//		//printing the result of the operations
+//		System.out.printf("%.1f %c %.1f = %.1f", first, operator, second, result);
+//		}
+
+

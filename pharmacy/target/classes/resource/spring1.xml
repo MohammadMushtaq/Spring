@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<bean id="charger" class="pharmacy.bean.spring.Charger">
+<constructor-arg value="micha"></constructor-arg>
+<constructor-arg value="5500"></constructor-arg>
+<property name="color" value="white"></property>
+<property name="volts" value="250v"></property>
+<property name="working" value="true"></property>
+</bean>
+
+<bean id="solarWater" class="pharmacy.bean.spring.SolarWaterHeater">
+<property name="capacity" value="25"></property>
+<property name="brand" value="bajaj"></property>
+<property name="price" value="2500"></property>
+<property name="coldWater" value="true"></property>
+</bean>
+<bean id="toothPaste" class="pharmacy.bean.spring.ToothPaste">
+<constructor-arg value="closeup"></constructor-arg>
+<constructor-arg value="50"></constructor-arg>
+<constructor-arg value="true"></constructor-arg>
+<constructor-arg value="true"></constructor-arg>
+<property name="salt" value="true"></property>
+<property name="brandAmbassodor" value="virat kohli"></property>
+</bean>
+
+<bean id="ups" class="pharmacy.bean.spring.Ups">
+<property name="company" value="micro"></property>
+<property name="type" value="ups"></property>
+<property name="weight" value="500"></property>
+<property name="backUpHour" value="4"></property>
+<property name="chargeHour" value="1"></property>
+
+</bean>
+
+
+
+
+   </beans>

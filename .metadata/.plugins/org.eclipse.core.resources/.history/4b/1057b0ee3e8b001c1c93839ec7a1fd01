@@ -1,0 +1,24 @@
+package com.xworkz.bean;
+
+import com.xworkz.bean.spring.Camera;
+import com.xworkz.bean.spring.Laptop;
+
+
+public class LaptopScanner {
+
+	public static void main(String[] args) {
+			
+		Laptop laptop= new Laptop();
+		laptop.setBrand("sony");
+		laptop.setCamera(null);
+		Camera camera = (Camera)laptop;
+		laptop.setCamera(camera);
+	//	camera.captureImage();
+	
+		
+		
+		
+
+	}
+
+}

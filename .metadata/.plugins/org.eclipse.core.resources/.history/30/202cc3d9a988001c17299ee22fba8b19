@@ -1,0 +1,15 @@
+package pharmacy.bean.spring;
+
+public class Ups {
+
+	private String Company;
+	private String type;
+	private double weight;
+	private float backUpHour;
+	private float chargeHour;
+	
+	public Ups() {
+		System.out.println("create ups");
+	}
+	
+}

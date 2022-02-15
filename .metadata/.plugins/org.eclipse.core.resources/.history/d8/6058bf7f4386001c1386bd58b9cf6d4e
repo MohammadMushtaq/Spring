@@ -1,0 +1,20 @@
+public class Strin {
+
+	public static void main(String[] args) {
+		
+		int num=121;
+		int n1=num,rem,rev=0;
+		while(n1!=0){
+			rem= n1%10;
+			rev= rev*10+rem;
+			n1=n1/10;
+		}if(rev==num) {
+			System.out.println("num is palendron");
+		}else {
+			System.err.println("num is not palendron");
+		}
+		
+		
+		}	
+	}	
+

@@ -1,0 +1,20 @@
+package com.xworkz.bean.spring;
+
+public class Laptop {
+	
+	private Camera camera;
+	private String brand;
+	
+	public Laptop() {
+		System.out.println("invoked laptop no args");
+	}
+		
+//	public void setBrand(String brand) {
+//		this.brand = brand;
+//	}
+	public void setCamera(Camera camera) {
+		this.camera = camera;
+		System.out.println("invoked camera of "+brand);
+	}
+
+}

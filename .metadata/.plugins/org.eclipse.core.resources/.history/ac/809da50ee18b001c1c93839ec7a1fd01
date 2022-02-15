@@ -1,0 +1,36 @@
+package com.xworkz.bean;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Person {
+
+	private String name;
+	private List<String> bookNames = new ArrayList<String>();
+	
+	
+	public List<String> getBookNames() {
+		return bookNames;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", bookNames=" + bookNames + "]";
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public void setBookNames(List<String> bookNames) {
+		this.bookNames = bookNames;
+	}
+
+
+	
+	
+	
+}

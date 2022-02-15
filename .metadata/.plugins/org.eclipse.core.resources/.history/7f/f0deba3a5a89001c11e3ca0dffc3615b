@@ -1,0 +1,11 @@
+package com.xworkz.gold.util;
+
+public class Gold {
+	
+	private int id;
+	private Double Carraot;
+	private String mixQuantiy;
+	private double purity;
+	private boolean gold;
+
+}

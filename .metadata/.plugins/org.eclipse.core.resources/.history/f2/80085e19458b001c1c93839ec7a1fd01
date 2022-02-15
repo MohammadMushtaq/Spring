@@ -1,0 +1,15 @@
+package com.xworkz.travel.travels;
+
+public class TravelsImpl implements Travels{
+
+	private Travels travels;
+	private String name;
+	
+	@Override
+	public void booking() {
+		System.out.println("invoked booking");
+		
+	}
+	
+
+}

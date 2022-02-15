@@ -1,0 +1,8 @@
+package com.xworkz.gold.dao;
+
+import com.xworkz.gold.util.Gold;
+
+public interface GoldDAO {
+
+	void save(Gold gold);
+}

@@ -1,0 +1,15 @@
+package com.xworkz.travel;
+
+
+
+
+public class TravelSpringDirector {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext spring= new ClassPathXmlApplicationContext("resource/spring1.xml");
+
+
+	}
+
+}

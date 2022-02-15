@@ -1,0 +1,5 @@
+package com.xworkz.passport.service;
+
+public class PassportServiceImp {
+
+}

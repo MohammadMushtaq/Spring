@@ -1,0 +1,16 @@
+public class Strin {
+
+	public static void main(String[] args) {
+		
+		String name="madam",temp = "";
+		int len= name.length();
+		for (int i = len-1; i>=0; i--) {
+			temp = temp+name.charAt(i);
+		}
+		if(temp==name) {
+			System.out.println("string is palendron");
+		}else {
+			System.err.println("string is not palendron");}	
+		}	
+	}	
+

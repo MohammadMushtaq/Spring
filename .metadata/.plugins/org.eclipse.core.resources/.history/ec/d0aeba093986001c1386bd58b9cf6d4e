@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Strin {
+
+	public static void main(String[] args) {
+	
+		int a=456;
+		int len=0;
+		for (int i = a; i < args.length; i++) {
+			System.out.println(len);
+		} 
+		
+		
+	}	
+}

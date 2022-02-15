@@ -1,0 +1,27 @@
+package com.xworkz.bean;
+
+import com.xworkz.bean.spring.Camera;
+import com.xworkz.bean.spring.Laptop;
+
+
+public class LaptopScanner {
+
+	public static void main(String[] args) {
+			
+		Laptop laptop= new Laptop();
+		laptop.setBrand("kodak");
+		laptop.setCamera(camera);
+		
+	//	CosmeticDAO cosmeticDAO= new CosmeticDAOImpl();
+	//	cosmeticDAO.save(coEntity4);			
+	//	CosmeticService cosmeticService = new CosmeticServiceImpl();
+	//	cosmeticService.validateAndSave(coEntity);
+			
+		Camera camera = new Camera();
+		camera.captureImage(laptop.setCamera(camera));
+		
+		
+
+	}
+
+}

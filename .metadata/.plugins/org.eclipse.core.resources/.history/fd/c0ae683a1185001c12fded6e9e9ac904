@@ -1,0 +1,29 @@
+
+public class Execption {
+	
+	public static void myThread(int age) 
+	{
+		if(age==12) {
+			try {
+				throw new Exception("adding the exeption");
+				
+			} catch (Exception e) {
+				System.out.println("handle");
+			}
+			
+		}
+	}
+		public static void main(String[] args) {
+			int i=500/2;
+			try {
+				Execption.myThread(13);
+			} catch (Exception e) {
+				System.out.println("adding");
+			}
+			finally {
+				System.out.println("finally ");
+			}
+			System.out.println("coding ");
+		}
+	
+}

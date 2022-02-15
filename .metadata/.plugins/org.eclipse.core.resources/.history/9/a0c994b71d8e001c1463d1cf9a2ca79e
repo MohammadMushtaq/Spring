@@ -1,0 +1,19 @@
+package com.xworkz.passport.reposistry;
+
+import com.xworkz.passport.entity.PassportEntity;
+
+public class PassportDAOImpl implements PassportDAO{
+
+private PassportDAO passportDAO;
+	
+	public PassportDAOImpl(PassportDAO passportDAO) {
+	this.passportDAO= passportDAO;
+}
+	
+	@Override
+	public void save(PassportEntity entity) {
+		
+		
+	}
+
+}
