@@ -29,12 +29,31 @@ public class PassportServiceImp implements PassportService{
 				System.err.println("invalid date ");
 				return valid;
 			}
-			if(entity.getExpiresAt()!=null && entity.getExpiresAt().isAfter(entity.getIssuedAt().plusYears(10))) {
+			
+			if(entity.getPassportPersonnelType().equals(PassportPersonnelType.REGULAR))
+			{
+				if(entity.getExpiresAt()!=null && entity.getExpiresAt().isAfter(entity.getIssuedAt().plusYears(10))) 
+				{
 				valid=true;
-			}else {
+				}
+				else {
+					System.err.println("expired");
+				return valid;
+				}	
+			}
+			else if(entity.getPassportPersonnelType().equals(PassportPersonnelType.DEPLOMATIC)){ 
+				if(entity.getExpiresAt()!=null && entity.getExpiresAt().isAfter(entity.getIssuedAt().plusYears(5))) 
+				{
+				valid=true;
+				}
+				else 
+				{
 				System.err.println("expired");
 				return valid;
+				}
 			}
+			
+			
 			if(entity.getPassportNo()!=null && entity.getPassportNo().length()==8) {
 				
 				  String regex = "^[A-PR-WYa-pr-wy][1-9]\\d"
@@ -69,7 +88,7 @@ public class PassportServiceImp implements PassportService{
 				System.err.println("invalid");
 				return false;
 			}
-			if(entity.getDob()!=null) {
+			if(entity.getDob()!=null && entity.getDob().isBefore(LocalDateTime.now())) {
 				valid= true;
 			}else {
 				System.err.println("invalid");
