@@ -8,6 +8,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="spring-jpa"/>
+			<item value="travelt_spring_Injection"/>
 			<item value="spring_dependency"/>
 			<item value="hikari"/>
 			<item value="spring"/>

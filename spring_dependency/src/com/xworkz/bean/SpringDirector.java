@@ -16,13 +16,11 @@ public class SpringDirector {
 	
 		Camera camera= spring.getBean(Camera.class);
 		
-		
-		
 		Person person= spring.getBean("person",Person.class);
 		person.getBookNames();
 		person.getName();
 		
-	//	Person person1= spring.getBean("person1",Person.class);
+		
 	
 	}
 }

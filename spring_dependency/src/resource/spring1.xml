@@ -33,9 +33,9 @@
 			</list>
 		</constructor-arg>
 	</bean>
-	<!-- <constructor-arg ref="person1"></constructor-arg> </bean> <bean id="person1" 
-		class="com.xworkz.bean.Person"> <constructor-arg><list> <value>500</value> 
-		<value>400</value> <value>300</value> <value>545</value> </list></constructor-arg> 
-		</bean> -->
+
+	<!-- <bean id="person1" class="com.xworkz.bean.Person"> <constructor-arg> 
+		<list> <value>500</value> <value>400</value> <value>300</value> <value>545</value> 
+		</list></constructor-arg> </bean> -->
 
 </beans>
