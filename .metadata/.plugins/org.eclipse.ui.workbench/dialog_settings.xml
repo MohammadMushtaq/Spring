@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.buildship.ui.wizards.project.import"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.buildship.ui.importwizards"/>
+		</list>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_WIDTH" value="450"/>
@@ -9,18 +13,22 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
 			<item value="org.eclipse.ui.views.ResourceNavigator"/>
+			<item value="org.eclipse.ui.console.ConsoleView"/>
 			<item value="org.eclipse.jdt.ui.PackageExplorer"/>
 		</list>
 		<list key="orderedProviders">
 			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
 			<item value="1"/>
 			<item value="2"/>
 		</list>
 		<list key="textArray">
 			<item value="nav"/>
+			<item value="console"/>
 			<item value="packa"/>
 			<item value="pa"/>
 		</list>

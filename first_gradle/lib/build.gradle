@@ -6,7 +6,7 @@
  * User Manual available at https://docs.gradle.org/7.4/userguide/building_java_projects.html
  */
 
-plugins {
+plugins {                                                                                                                                                                                                                                                   
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
 }
