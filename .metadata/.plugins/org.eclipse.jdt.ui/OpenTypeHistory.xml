@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=coffeeday-spring/src&lt;com.xworkz.coffeeday.repository{CoffeeDayRepository.java[CoffeeDayRepository" modifiers="513" timestamp="1645227819509"/>
+    <typeInfo handle="=coffeeday-spring/src&lt;com.xworkz.coffeeday.service{CoffeeDayService.java[CoffeeDayService" modifiers="513" timestamp="1645228635923"/>
+</typeInfoHistroy>
