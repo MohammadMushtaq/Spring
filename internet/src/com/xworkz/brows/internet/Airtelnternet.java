@@ -5,24 +5,28 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-@Configuration
+
 @Component
 public class Airtelnternet implements Internet {
-@Autowired
 
+@Value (value="airtel")
  private String vendor;
+@Value (value="870")
  private double costPerMonth;
 	
- public Airtelnternet(String vendor,double costPerMonth) {
-	this.vendor=vendor;
-	this.costPerMonth=costPerMonth;
-	System.out.println("vendor"+this.vendor);
-	System.out.println("cost "+this.costPerMonth);
-}
+// public Airtelnternet(String vendor,double costPerMonth) {
+//	this.vendor=vendor;
+//	this.costPerMonth=costPerMonth;
+//	
+//}
 	
 	@Override
 	public void connect() {
+		this.vendor=vendor;
+		this.costPerMonth=costPerMonth;
 		System.out.println("connected using airtel internet");
+		System.out.println("vendor"+this.vendor);
+		System.out.println("cost "+this.costPerMonth);
 
 	}
 

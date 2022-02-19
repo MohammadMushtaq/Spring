@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.xworkz.cosmetics.dao.CosmeticDAO"/>
-    <fullyQualifiedTypeName name="com.xworkz.cosmetics.entity.CosmeticEntity"/>
-    <fullyQualifiedTypeName name="com.xworkz.bean.LaptopScanner"/>
-    <fullyQualifiedTypeName name="com.xworkz.bean.spring.Laptop"/>
-    <fullyQualifiedTypeName name="com.xworkz.bean.spring.Camera"/>
-    <fullyQualifiedTypeName name="com.xworkz.travel.travels.Travels"/>
-    <fullyQualifiedTypeName name="com.xworkz.travel.traveller.Traveller"/>
-    <fullyQualifiedTypeName name="com.xworkz.travel.transport.Transport"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.xworkz.bean.Person"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -50,14 +42,22 @@
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="com.xworkz.coffeeday.service.CoffeeDayService"/>
     <fullyQualifiedTypeName name="com.xworkz.internet.Internet"/>
-    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="com.xworkz.browser.Browser"/>
     <fullyQualifiedTypeName name="com.xworkz.browser.CromeBrowser"/>
     <fullyQualifiedTypeName name="java.awt.Container"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.xworkz.brows.browser.Browser"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="com.xworkz.add.HomeAddress"/>
+    <fullyQualifiedTypeName name="com.xworkz.address.AbstractAddress"/>
+    <fullyQualifiedTypeName name="com.xworkz.address.Address"/>
+    <fullyQualifiedTypeName name="com.xworkz.ecommerce.Ecommerce"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySource"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySources"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.xworkz.customer.Customer"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
 </qualifiedTypeNameHistroy>
