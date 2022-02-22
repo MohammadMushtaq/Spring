@@ -1,6 +1,7 @@
 package com.xworkz.customer;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +14,7 @@ public class Customer {
 	@Value("anil")
 	private String name;
 	@Autowired
+	@Qualifier ("homeAddress")
 	private Address address;
 	@Autowired
 	private Ecommerce ecommerce;

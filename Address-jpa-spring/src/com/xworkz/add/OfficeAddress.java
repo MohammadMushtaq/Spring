@@ -22,13 +22,13 @@ public class OfficeAddress extends AbstractAddress implements Address {
 	@Value("${office.street}")
 	public void setStreet(String street) {
 	
-		
+		this.street=street;
 	}
 
 	@Override
 	@Value("${office.doorNo}")
 	public void setDoorNo(int doorNo) {
-		// TODO Auto-generated method stub
+		this.doorNo=doorNo;
 		
 	}
 	
@@ -36,7 +36,7 @@ public class OfficeAddress extends AbstractAddress implements Address {
 	@Override
 	@Value("${office.city}")
 	public void setCity(String city) {
-		// TODO Auto-generated method stub
+		this.city=city;
 		
 	}
 

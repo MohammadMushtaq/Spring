@@ -8,25 +8,24 @@ import org.springframework.stereotype.Component;
 import com.xworkz.address.AbstractAddress;
 import com.xworkz.address.Address;
 
-//@Component
+@Component
 public class HomeAddress extends AbstractAddress implements Address {
 
 	@Override
 	@Value("mg road")
 	public void setStreet(String street) {
-		//System.out.println(super.street);
-	}
+		this.street=street;	}
 
 	@Override
 	@Value("120")
 	public void setDoorNo(int doorNo) {
-
+this.doorNo=doorNo;
 	}
 
 	@Override
 	@Value("bangalore")
 	public void setCity(String city) {
-
+this.city=city;
 	}
 
 	@Override
