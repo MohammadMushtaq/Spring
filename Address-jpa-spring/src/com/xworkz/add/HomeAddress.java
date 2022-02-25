@@ -19,13 +19,13 @@ public class HomeAddress extends AbstractAddress implements Address {
 	@Override
 	@Value("120")
 	public void setDoorNo(int doorNo) {
-this.doorNo=doorNo;
+		this.doorNo=doorNo;
 	}
 
 	@Override
 	@Value("bangalore")
 	public void setCity(String city) {
-this.city=city;
+		this.city=city;
 	}
 
 	@Override

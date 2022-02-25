@@ -19,15 +19,16 @@ public class EcommerceImpl implements Ecommerce {
 //	@Qualifier("homeAddress")
 //	private Address address;
 	
-	@Autowired
-	@Qualifier("officeAddress")
+//	@Autowired
+//	@Qualifier("officeAddress")
 	private Address address1;
 	
 	
 	@Override
 	public void orderItem(String item) {
 		
-		System.out.println("order item is "+this.address1);
+		this.address1=address1;
+		//System.out.println("order item is "+this.address1);
 	}
 
 	@Override

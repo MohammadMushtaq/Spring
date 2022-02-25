@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="JDBC-Templet"/>
 			<item value="com.xworkz"/>
 			<item value="com.xworkz.hibernate.advance"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="JDBC-Templet"/>
 			<item value="spring-jpa"/>
 			<item value="travelt_spring_Injection"/>
 			<item value="spring_dependency"/>

@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.mysql.cj.xdevapi.Statement;
 import com.xworkz.db.DBConstants;
 import com.xworkz.enitity.SuperMarket;
 import com.xworkz.util.DBUtil;

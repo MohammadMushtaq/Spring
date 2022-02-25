@@ -14,10 +14,11 @@ public class Customer {
 	@Value("anil")
 	private String name;
 	@Autowired
-	@Qualifier ("homeAddress")
+	@Qualifier ("officeAddress")
 	private Address address;
 	@Autowired
 	private Ecommerce ecommerce;
+	
 	
 	public void order(String item) {
 		this.address.displayDeatils();

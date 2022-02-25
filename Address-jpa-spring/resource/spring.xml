@@ -14,12 +14,7 @@
 		<property name="location" value="application.properties"></property>
 	</bean>
 	
-      
-        
-        
-        
-        
-        
+ 
  </beans> 
 
 

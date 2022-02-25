@@ -4,10 +4,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceException;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.xworkz.customer.entity.CustomerEntity;
 
 public class CustomerRepositoryImpl implements CustomerRepository{
 
+	@Autowired
 	private EntityManagerFactory entityManagerFactory;
 	
 	public CustomerRepositoryImpl(EntityManagerFactory entityManagerFactory) {
