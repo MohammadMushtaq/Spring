@@ -3,4 +3,6 @@
     <typeInfo handle="=coffeeday-spring/src&lt;com.xworkz.coffeeday.repository{CoffeeDayRepository.java[CoffeeDayRepository" modifiers="513" timestamp="1645227819509"/>
     <typeInfo handle="=coffeeday-spring/src&lt;com.xworkz.coffeeday.service{CoffeeDayService.java[CoffeeDayService" modifiers="513" timestamp="1645228635923"/>
     <typeInfo handle="=Address-jpa-spring/src&lt;com.xworkz.ecommerce{Ecommerce.java[Ecommerce" modifiers="513" timestamp="1645277083038"/>
+    <typeInfo handle="=Home-page/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.xworkz.bean.repository{ProductRepository.java[ProductRepository" modifiers="513" timestamp="1645810002316"/>
+    <typeInfo handle="=Home-page/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.xworkz.bean.service{ProductService.java[ProductService" modifiers="513" timestamp="1645810184949"/>
 </typeInfoHistroy>

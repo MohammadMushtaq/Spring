@@ -40,7 +40,5 @@ public String governmentDetail(@RequestParam("style") String name,@RequestParam(
 	return "/gov.html";
 	
 	
-}
-
-	
+}	
 }
