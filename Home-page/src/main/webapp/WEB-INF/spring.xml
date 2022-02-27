@@ -17,6 +17,7 @@
 		<constructor-arg value="${jdbc.url}"></constructor-arg>
 		<constructor-arg value="${jdbc.username}"></constructor-arg>
 		<constructor-arg value="${jdbc.password}"></constructor-arg>
+		
 	</bean>
 
 	<bean id="propertyPlaceholderConfigurer"

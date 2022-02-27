@@ -13,7 +13,7 @@ public class WebBean {
 		System.out.println("invoked web bean");
 	}
 	
-@RequestMapping("click.do")
+	@RequestMapping("click.do")
 public String enter(@RequestParam String name,@RequestParam String email,@RequestParam long mobile,@RequestParam int age  ) {
 	
 	System.out.println(name);
