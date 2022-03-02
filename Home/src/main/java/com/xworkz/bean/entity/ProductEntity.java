@@ -5,9 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.xworkz.bean.constants.ProductType;
-import com.xworkz.bean.constants.QuantityType;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

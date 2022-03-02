@@ -33,7 +33,6 @@ public class ProductBean {
 		this.productService.validateAndSave(productEntity1);
 			
 		return "/home.html";
-		
-		
+	
 	}
 }
