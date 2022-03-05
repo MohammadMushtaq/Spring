@@ -1,45 +1,44 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
 
 <body>
-	<h1 style="color: navy;">welcome to Phone directory</h1>
-	
-	<span style="red">${message}</span>
-	
-	<form action="dir.do" method="post"></form>
+<h1 style="color: navy;">welcome to Phone directory</h1>
+
+	<form action="dir.do" method="post">
+	<span style="color: red;">${message}</span>
 	<div>
 	<label style="font-family:fantasy; ">Name</label>
 	<input type="text" name="name">
 	</div>
 	<div>
 	<label style="font-family:fantasy; ">Mobile Num</label>
-	<input type="text" name="mobileNum">
+	<input type="text" name="mobileNo">
 	</div>
 	
 	<div>
 	<label style="font-family:fantasy; ">Address</label>
-	<textarea path="address" rows="5" cols="40"></textarea>
+	<textarea name="address" rows="5" cols="40"></textarea>
 	</div>
 	
 	<div>
-	<label style="font-family:fantasy; ">LandMark</label>
-	<input type="text" name="landMark">
+	<label style="font-family:fantasy; ">landmark</label>
+	<input type="text" name="landmark">
 	</div>
 	
 	<div>
-	<label style="font-family:fantasy; ">Landline No</label>
-	<input type="text" name="landlineNo">
+	<label style="font-family:fantasy; ">LandlineNo</label>
+	<input type="text" name="landlineNum">
 	</div>
 	
 	<div>
 	<label style="font-family:fantasy; ">City</label>
-	<select name="city">
+	<select  name="city">
 	<option>Bangalore</option>
 	<option>Hydrabad</option>
 	<option>Bellary</option>
@@ -64,10 +63,10 @@
 	<option>546564</option>
 	</select>
 	</div>
-	
 	<div>
 	<input style="color: green;" type="submit" value="Add Contact">
 	</div>
-
+	</form>
 </body>
+
 </html>

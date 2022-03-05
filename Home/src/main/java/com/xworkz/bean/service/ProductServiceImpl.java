@@ -7,6 +7,7 @@ import com.xworkz.bean.entity.ProductEntity;
 import com.xworkz.bean.repository.ProductRepository;
 @Component
 public class ProductServiceImpl implements ProductService {
+	
 @Autowired
 	private ProductRepository productRepository;
 	
@@ -48,7 +49,7 @@ public class ProductServiceImpl implements ProductService {
 		if (valid=true) {
 			this.productRepository.save(productEntity);
 		} else {
-
+			return valid;
 		}
 		
 		

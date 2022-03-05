@@ -3,11 +3,7 @@
   <display-name>Directory_MVC</display-name>
   <welcome-file-list>
     <welcome-file>DirectoryRegister.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+   
   </welcome-file-list>
   
   <servlet>
@@ -24,6 +20,6 @@
   
   <servlet-mapping>
   <servlet-name >ds</servlet-name>
-  <url-pattern>*.do</url-pattern>
+  <url-pattern>/dir.do</url-pattern>
   </servlet-mapping>
 </web-app>

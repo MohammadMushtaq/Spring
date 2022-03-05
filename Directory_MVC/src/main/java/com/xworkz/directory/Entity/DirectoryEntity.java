@@ -13,11 +13,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @Entity 
-@Table (name="directory")
+@Table(name="cosmetic.directory")
 public class DirectoryEntity {
 @Id
 @Column(name="d_id")
-@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 @Column(name="d_name")
 	private String name;
@@ -45,9 +44,6 @@ public DirectoryEntity(String name, double mobileNo, String address, String land
 	this.city = city;
 	this.pincode = pincode;
 }
-
-
-
 }
 
 

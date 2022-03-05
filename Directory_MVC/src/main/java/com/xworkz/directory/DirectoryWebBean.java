@@ -19,28 +19,24 @@ public class DirectoryWebBean {
 	public DirectoryWebBean() {
 		System.out.println("invoked bean");
 	}
-	
 	@RequestMapping("/dir.do")
-	public String directorydetail(DirectoryDTO directoryDTO, Model model ) {
-		System.out.println("invoked directory");
-		System.out.println(directoryDTO);
-		DirectoryEntity directoryEntity= new DirectoryEntity(directoryDTO.getName(),
-				directoryDTO.getMobileNo(), directoryDTO.getAddress(), directoryDTO.getLandmark()
-				, directoryDTO.getLandlineNum(), directoryDTO.getCity(), directoryDTO.getPincode());
-		
-		boolean save= directoryService.validateAndSave(directoryEntity);
-		
-		if(save) {
-			System.out.println("directory is saved "+directoryDTO.getName());
-			model.addAttribute("directory is saved succefully");
-		}else {
-			System.err.println("directory is not saved "+directoryDTO.getName());
-			model.addAttribute("directory is not saved ");
+	public String save(DirectoryDTO dto, Model model) {
+		System.out.println("invoked phone directory method");
+		System.out.println(dto);
+		DirectoryEntity entity = new DirectoryEntity(dto.getName(), dto.getMobileNo(), dto.getAddress(), dto.getLandmark(),
+				dto.getLandlineNum(), dto.getCity(), dto.getPincode());
+		boolean valid = directoryService.validateAndSave(entity);
+		if(valid) {
+			System.out.println("dir saved successfully "+dto.getName());
+			model.addAttribute("message", "directory is saved sucessfully");
 		}
-		return "/DirectoryRegister.jsp";
-			
+		else {
+			System.err.println("dir not saved successfully "+dto.getName());
+			model.addAttribute("message", "directory is not saved sucessfully");
+		}
 		
-	
+		
+		return "/DirectoryRegister.jsp";
 	}
 	
 }
