@@ -9,7 +9,10 @@ public interface GroceryService {
 	
 	default GroceryDTO validateAndFindByName(String  name) {
 		return null;
-		
-		
+	
 	}
+	default GroceryDTO validateAndUpdateByName(String name) {
+		return null;
+	}
+		
 }

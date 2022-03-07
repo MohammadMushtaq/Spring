@@ -10,6 +10,8 @@
 	<form action="search.do">
 	<input type="text" name="name"/><br>
 	<input type="submit" value="search"/>
+	
+	
 	</form>
 	
 	<h2>${message}</h2>
@@ -21,7 +23,11 @@
 	<span style="color : blue;"> ${totalprice}</span>
 	
 	<br></br>
-	<a href="LandingPage.jsp"></a>
+	<br>
+	<a href="UpdateItem.jsp">update item</a>
+	
+	<br></br>
+	<a href="LandingPage.jsp">home page</a>
 	
 </body>
 </html>

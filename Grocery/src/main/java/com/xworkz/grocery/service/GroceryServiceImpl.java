@@ -11,6 +11,7 @@ import com.xworkz.grocery.repository.GroceryRepository;
 public class GroceryServiceImpl implements GroceryService {
 	
 	private GroceryRepository groceryRepository;
+	private GroceryDTO groceryDTO;
 	
 	public GroceryServiceImpl(GroceryRepository groceryRepository) {
 		this.groceryRepository = groceryRepository;
@@ -95,7 +96,21 @@ public class GroceryServiceImpl implements GroceryService {
 		 valid=false;
 		}
 		return GroceryService.super.validateAndFindByName(name);
+	}
+	
+	@Override
+	public GroceryDTO validateAndUpdateByName(String name) {
 		
+		if(validateAndFindByName(groceryDTO.getName()).equals(validateAndUpdateByName(name))){
+			GroceryEntity entity= this.groceryRepository.updateByName(groceryDTO.getName(),
+			groceryDTO.getQuantity(), groceryDTO.getPrice(), groceryDTO.getType(), groceryDTO.getBrand());
+			GroceryDTO dto= new GroceryDTO();
+			BeanUtils.copyProperties(entity, dto);
+			return dto;
+			}else {
+				System.out.println("not valid data");
+			}
+		return GroceryService.super.validateAndUpdateByName(name);
 	}
 
 }

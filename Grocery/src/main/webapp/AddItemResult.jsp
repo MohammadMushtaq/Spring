@@ -23,7 +23,7 @@
 	<br>
 	<label  style="color : red;">brand:</label><span style="color : red;"> ${grocery.brand}</span>
 	<br>
-	<label  style="color : red;">total:</label><span style="color : red;"> ${grocery.total}</span>
+	<span style="color : red;"> ${totalprice}</span>
 	<br>	
 	<span style="color : red;"> ${message}</span>
 	<br><br>		

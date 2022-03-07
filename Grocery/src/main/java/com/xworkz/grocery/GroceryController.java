@@ -33,6 +33,8 @@ public class GroceryController {
 			System.out.println("grocery is saved");
 			model.addAttribute("message","grocery is saved sucessfully");
 			model.addAttribute("grocery",groceryDTO);
+			double price = groceryDTO.getPrice()*groceryDTO.getQuantity();
+			model.addAttribute("totalprice", "total price : "+price);
 			
 		}
 		else {

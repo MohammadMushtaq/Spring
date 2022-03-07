@@ -22,6 +22,7 @@ public class GrocerySearchController {
 	
 	@RequestMapping("search.do")
 	public String searchName(@RequestParam String name,Model model) {
+		
 		GroceryDTO dto= this.groceryService.validateAndFindByName(name);
 		
 		if(dto!=null) {

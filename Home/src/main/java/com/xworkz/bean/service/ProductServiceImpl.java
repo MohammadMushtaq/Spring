@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 import com.xworkz.bean.entity.ProductEntity;
 import com.xworkz.bean.repository.ProductRepository;
+
 @Component
 public class ProductServiceImpl implements ProductService {
 	
