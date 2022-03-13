@@ -1,6 +1,9 @@
 package com.xworkz.grocery.service;
 
+import javax.persistence.PersistenceException;
+
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.xworkz.grocery.dto.GroceryDTO;
@@ -8,7 +11,7 @@ import com.xworkz.grocery.entity.GroceryEntity;
 import com.xworkz.grocery.repository.GroceryRepository;
 
 @Service
-public class GroceryServiceImpl implements GroceryService {
+public class GroceryServiceImpl implements GroceryService{
 	
 	private GroceryRepository groceryRepository;
 	private GroceryDTO groceryDTO;
@@ -99,18 +102,67 @@ public class GroceryServiceImpl implements GroceryService {
 	}
 	
 	@Override
-	public GroceryDTO validateAndUpdateByName(String name) {
-		
-		if(validateAndFindByName(groceryDTO.getName()).equals(validateAndUpdateByName(name))){
-			GroceryEntity entity= this.groceryRepository.updateByName(groceryDTO.getName(),
-			groceryDTO.getQuantity(), groceryDTO.getPrice(), groceryDTO.getType(), groceryDTO.getBrand());
-			GroceryDTO dto= new GroceryDTO();
-			BeanUtils.copyProperties(entity, dto);
-			return dto;
-			}else {
-				System.out.println("not valid data");
+	public GroceryDTO validateAndUpdateByName(String name, int quantity, double price, String type, String brand) {
+	
+		boolean valid= false;
+		if(name!=null) {
+			System.out.println("valid name");
+		valid=true;
+		}
+		else {
+			System.out.println("not a valid name");
+			valid=false;
+		}
+		if(price!=0 ) {
+			System.out.println("price is valid");
+			 valid=true;
 			}
-		return GroceryService.super.validateAndUpdateByName(name);
+			else {
+				System.out.println("price is null");
+				valid=false;
+			}
+		if(brand!=null) {
+			System.out.println("valid brand");
+			valid=false;
+			}
+			else {
+				System.out.println("not a valid brand");
+				valid=false;
+			}
+		if(quantity!=0 ) {
+			System.out.println("valid quantity");
+			valid=true;
+			}
+			else {
+				System.out.println("not a valid quantity");
+				valid=false;
+			}
+		if(type!=null ) {
+			System.out.println(" valid type update");
+			valid= true;
+			}
+			else {
+				System.out.println("not a valid type");
+				valid=false;
+			}
+		
+		if(valid=true) {
+			GroceryEntity groceryEntity = new GroceryEntity();
+			groceryEntity.setName(name);
+			groceryEntity.setPrice(price);
+			groceryEntity.setQuantity(quantity);
+			groceryEntity.setBrand(brand);
+			groceryEntity.setType(type);
+			this.groceryRepository.updateByName(groceryEntity);
+			
+			System.out.println("valid service detail");
+			valid=true;
+		}
+		else {
+			System.err.println("not a valid data");
+			valid=false;
+		}
+	
+		return GroceryService.super.validateAndUpdateByName(name, quantity, price, type, brand);
 	}
-
 }

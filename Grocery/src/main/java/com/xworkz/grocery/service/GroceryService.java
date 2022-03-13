@@ -11,7 +11,7 @@ public interface GroceryService {
 		return null;
 	
 	}
-	default GroceryDTO validateAndUpdateByName(String name) {
+	default GroceryDTO validateAndUpdateByName(String name, int quantity, double price, String type, String brand) {
 		return null;
 	}
 		

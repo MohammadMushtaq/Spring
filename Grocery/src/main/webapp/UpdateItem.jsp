@@ -23,32 +23,56 @@
 			</select>
 		</div>
 		<div>
+				<label for="quantity">quantity</label> <select name="quantity">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+				</select>
+			</div>
+
+			<div>
 				<label>price</label> <input type="text" name="price">
 			</div>
-		<div>
-				<label>quantity :</label> <input type="text" name="quantity">
-			</div>
-			
 			<div>
-				<label>type :</label> <input type="text" name="type">
+				<label for="type">type</label> <select name="type">
+					<option>kg</option>
+					<option>gms</option>
+					<option>ltr</option>
+					<option>piece</option>
+					<option>dozen</option>
+					<option>quant</option>
+				</select>
 			</div>
-			<div>
-				<label>brand :</label> <input type="text" name="brand">
-			</div>
-		
 
+			<label for="brand">brand</label>
+			<select name="brand">
+				<option>sunflower</option>
+				<option>ashirwad</option>
+				<option>mount everest</option>
+				<option>bru</option>
+				<option>relience</option>
+				<option>tata</option>
+				<option>haldiram</option>
+			</select>
+			<br>
 		<input type="submit" value="update" />
 
 
 	</form>
 
 	<h2>${message}</h2>
+	<br>
 	<label>grocery name: </label>${grocery.name}<br>
 	<label>grocery quantity: </label>${grocery.quantity}<br>
 	<label>grocery price: </label>${grocery.price}<br>
 	<label>grocery type: </label>${grocery.type}<br>
 	<label>grocery brand: </label>${grocery.brand}<br>
-	<span style="color: blue;"> ${totalprice}</span>
+	
 
 	<br></br>
 	<a href="LandingPage.jsp"></a>

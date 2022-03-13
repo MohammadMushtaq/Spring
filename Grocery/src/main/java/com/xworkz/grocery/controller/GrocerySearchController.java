@@ -1,4 +1,4 @@
-package com.xworkz.grocery;
+package com.xworkz.grocery.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,15 +25,15 @@ public class GrocerySearchController {
 		
 		GroceryDTO dto= this.groceryService.validateAndFindByName(name);
 		
-		if(dto!=null) {
+		if(dto!=null&&dto.getName().equals(dto.getName())) {
 			model.addAttribute("grocery", dto);
 			double total=(dto.getQuantity()*dto.getPrice());
 			model.addAttribute("totalprice", "Total price :  "+total);
+		
 		}else {
-			model.addAttribute("grocery", "grocery not found");
+			model.addAttribute("message", "grocery not found");
+			
 		}
-		
 		return "/Searchitem.jsp";
-		
-	}
+}
 }

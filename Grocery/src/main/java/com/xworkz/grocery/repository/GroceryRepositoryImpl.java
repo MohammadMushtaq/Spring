@@ -14,8 +14,9 @@ import com.xworkz.grocery.entity.GroceryEntity;
 @Repository
 public class GroceryRepositoryImpl implements GroceryRepository {
 	
-
+	@Autowired
 	private EntityManagerFactory entityManagerFactory;
+	
 	public GroceryRepositoryImpl() {
 		System.out.println("invoked groceryrepo");
 	}
@@ -48,30 +49,41 @@ public class GroceryRepositoryImpl implements GroceryRepository {
 			entityManager.getTransaction().commit();
 			return (GroceryEntity) result;
 		} catch (PersistenceException e) {
+			entityManager.getTransaction().rollback();;
 			e.printStackTrace();
+		}
+		finally {
+			entityManager.close();
 		}
 		
 		return GroceryRepository.super.findByName(name);
 	}
 	 
+
 @Override
-public GroceryEntity updateByName(String name, int quantity, double price, String type, String brand) {
+public GroceryEntity updateByName(GroceryEntity groceryEntity) {
 	EntityManager entityManager = entityManagerFactory.createEntityManager();
 	try {
+		entityManager.getTransaction().begin();
 		Query query = entityManager.createNamedQuery("updateByName");
-		query.setParameter("name", name);
-		query.setParameter("quantity", quantity);
-		query.setParameter("price", price);
-		query.setParameter("type", type);
-		query.setParameter("brand", brand);
+		query.setParameter("name", groceryEntity.getName());
+		query.setParameter("quantity", groceryEntity.getQuantity());
+		query.setParameter("price", groceryEntity.getPrice());
+		query.setParameter("type", groceryEntity.getType());
+		query.setParameter("brand", groceryEntity.getBrand());
 		
 		Object update=query.executeUpdate();	
+		entityManager.getTransaction().commit();
 		
-		return (GroceryEntity)update;
-	
-	} catch (PersistenceException e) {
+	} 
+	catch (PersistenceException e) {
+		entityManager.getTransaction().rollback();;
 		e.printStackTrace();
 	}
-	return GroceryRepository.super.updateByName(name, quantity, price, type, brand);
+	finally {
+		entityManager.close();
 	}
+	
+	return GroceryRepository.super.updateByName(groceryEntity);
+}
 }

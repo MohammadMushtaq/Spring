@@ -13,7 +13,9 @@
 
 	<form action="result.do" method="post">
 	<br>
-	<label  style="color : red;">name</label> <span style="color : red;"> ${grocery.name}</span>
+		<span style="color : red;"> ${message}</span>
+	<br>
+	<label  style="color : red;">name:</label> <span style="color : red;"> ${grocery.name}</span>
 	<br>
 	<label  style="color : red;">quantity:</label><span style="color : red;"> ${grocery.quantity}</span>
 	<br>
@@ -25,8 +27,8 @@
 	<br>
 	<span style="color : red;"> ${totalprice}</span>
 	<br>	
-	<span style="color : red;"> ${message}</span>
-	<br><br>		
+
+	<br>		
 		
 		<a href="AddItem.jsp">Add another item</a>
 		<br><br>

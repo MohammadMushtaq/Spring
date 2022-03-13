@@ -1,4 +1,4 @@
-package com.xworkz.grocery;
+package com.xworkz.grocery.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.xworkz.grocery.dto.GroceryDTO;
-import com.xworkz.grocery.entity.GroceryEntity;
 import com.xworkz.grocery.service.GroceryService;
 
 @Controller
@@ -21,23 +20,22 @@ public class GroceryUpdateController {
 		System.out.println("invoked update");
 	}
 
+//String name, int quantity, double price, String type, String brand,double total
 	@RequestMapping("update.do")
-	public String ScanAndUpdate(@RequestParam String name, Model model) {
+	public String ScanAndUpdate(@RequestParam String name, @RequestParam int quantity, @RequestParam double price,
+			@RequestParam String type, @RequestParam String brand, Model model) 
+	{
 		System.out.println("invoked update controller method");
-
-//		GroceryEntity entity = new GroceryEntity(groceryDTO.getName(), groceryDTO.getQuantity(), groceryDTO.getPrice(),
-//				groceryDTO.getType(), groceryDTO.getBrand(), groceryDTO.getTotal());
-
-		GroceryDTO update = groceryService.validateAndUpdateByName(name);
 		
-//		if (update != null) {
-			model.addAttribute("grocery", update);
-
-			double total = (update.getQuantity() * update.getPrice());
-			model.addAttribute("totalprice", "Total price :  " + total);
-//		} else {
-//			model.addAttribute("grocery", "grocery not found");
-//		}
+		GroceryDTO dto = this.groceryService.validateAndUpdateByName(name, quantity, price, type, brand);
+	
+		
+		if (dto==null) {
+			model.addAttribute("message"," is updted successfully");
+			model.addAttribute("grocery",dto);
+		} else {
+			model.addAttribute("message", "grocery is not updted successfully");
+		}
 
 		return "/UpdateItem.jsp";
 	}
