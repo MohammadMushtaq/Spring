@@ -32,7 +32,7 @@ public class GroceryUpdateController {
 		
 		if (dto==null) {
 			model.addAttribute("message"," is updted successfully");
-			model.addAttribute("grocery",dto);
+			model.addAttribute("SerachGrocery",dto);
 		} else {
 			model.addAttribute("message", "grocery is not updted successfully");
 		}

@@ -23,6 +23,7 @@
 		</div>
 
 
+		<br></br> <a href="LandingPage.jsp">home page</a>
 
 	</form>
 
@@ -37,10 +38,8 @@
 
 	<br></br>
 	<br>
-	<a href="UpdateItem.jsp">update item</a>
-
-	<br></br>
-	<a href="LandingPage.jsp">home page</a>
+	<a style="font-size: xx-large; color: navy;" href="UpdateItem.jsp">update item</a>
+	<br>
 
 </body>
 </html>

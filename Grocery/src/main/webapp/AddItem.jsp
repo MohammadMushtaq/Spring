@@ -66,8 +66,8 @@
 			<div>
 				<input type="submit" name="add item">
 			</div>
-
 		</table>
+		<br> <a href="LandingPage.jsp">back to home</a> </br>
 	</form>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,10 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Welcome To Grocery Application</h1>
-<a style="color: blue;" href="AddItem.jsp">Add Item</a><br>
-<a style="color: blue;" href="Searchitem.jsp">Search Item</a><br>
-<a href="GetAll.jsp"> get all by grocery</a><br>
-<a href="Delete.jsp"> delete by name</a>
+
+	<form action="delete.do">
+
+		<label>Enter the grocery</label>
+		<input type="text" name="name" />
+		<br> <input type="submit" value="delete">
+<br>
+<br>
+	<a href="LandingPage.jsp">Home page</a>
+	</form>
+
+	<h1>$msg</h1>
+
+
+
 </body>
 </html>

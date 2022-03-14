@@ -28,9 +28,10 @@ public class GroceryController {
 		GroceryEntity entity = new GroceryEntity(groceryDTO.getName(), groceryDTO.getQuantity(), groceryDTO.getPrice(),
 				groceryDTO.getType(), groceryDTO.getBrand(), groceryDTO.getTotal());
 
-			boolean saved =groceryService.validateAndSave(entity);
+//		if(entity!=null) {
+				boolean save=groceryService.validateAndSave(entity);
 		
-		if (!saved) {
+		if (!save) {
 			System.out.println("grocery is saved");
 			model.addAttribute("message", "grocery is saved sucessfully");
 			model.addAttribute("grocery", groceryDTO);
@@ -38,7 +39,8 @@ public class GroceryController {
 			double price = groceryDTO.getPrice() * groceryDTO.getQuantity();
 			model.addAttribute("totalprice", "total price : " + price);
 			System.err.println("~~~~~~~~~~~~~~~~~~~~~~ corr");
-		} 
+			} 
+	//	}
 		else {
 			System.out.println("data is not saved");
 			model.addAttribute("message", "grocery not saved");
